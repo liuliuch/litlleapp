@@ -1,0 +1,20 @@
+<!--pages/star/star.wxml-->
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+<view>
+
+<text>运势分析:</text>
+<view>{{info['analysis']}}</view>
+<text>幸运分析</text>
+<view>{{info['lucky_object'][0]}}</view>
+<view>{{info['lucky_object'][1]}}</view>
+<view>{{info['lucky_object'][2]}}</view>
+<view>{{info['lucky_object'][3]}}</view>
+<text>各项指数:</text>
+<view wx:for='{{fatedata}}' wx:key='property'>
+<view>{{item.name}}{{item.value}}</view>
+</view>
+</view>

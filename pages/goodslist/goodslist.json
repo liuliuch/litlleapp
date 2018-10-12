@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "今日推荐商品",
+  "navigationBarBackgroundColor": "#696969",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "black",
+  "usingComponents": {
+    "gooditem": "/components/gooditem/gooditem"
+  }
+}

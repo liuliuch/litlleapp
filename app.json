@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/webview/kuaidi",
+    "pages/index/index",
+    "pages/view/view",
+    "pages/logs/logs",
+    "pages/lianxi/lianxi",
+    "pages/goodslist/goodslist",
+    "pages/zhougong/zhougong",
+    "pages/zhougong/dreamsearch",
+    "pages/star/star"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "my little app",
+    "navigationBarBackgroundColor": "#696969"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/webview/kuaidi",
+        "selectedIconPath": "images/tabBar/home_fill.png",
+        "iconPath": "images/tabBar/home_unclick.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/star/star",
+        "selectedIconPath": "images/tabBar/star_fill.png",
+        "iconPath": "images/tabBar/star_unclick.png",
+        "text": "星座"
+      },
+      {
+        "pagePath": "pages/zhougong/zhougong",
+        "selectedIconPath": "images/tabBar/dream_fill.png",
+        "iconPath": "images/tabBar/dream_unclick.png",
+        "text": "周公解梦"
+      },
+      {
+        "pagePath": "pages/goodslist/goodslist",
+        "selectedIconPath": "images/tabBar/my_fill.png",
+        "iconPath": "images/tabBar/my_unclick.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+/* components/dreamitem/dreamitem.wxss */
+.zhanwei{
+  width: 100%
+}
+.info{
+  padding-top: 10rpx;
+  padding-left:30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 10rpx;
+  background:#ABB2B9;
+  border-radius: 15rpx;
+}
+
+
+.info .title{
+  font-size: 30rpx;
+  color: white 
+}
+.content{
+  box-sizing:border-box;
+  /* display: flex;
+  justify-content:center;  */
+  padding-top: 10rpx;
+  padding-left:30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 10rpx;
+  background: #D5D8DC;
+  border: 2rpx;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  margin-bottom: 5rpx
+}

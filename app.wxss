@@ -1,0 +1,300 @@
+@import "images/iconfont/iconfont.wxss";
+/**app.wxss**/
+page{
+  height: 100%;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  line-height: 1;
+} 
+
+/*Flexbox*/
+
+.flex {
+  display: flex;
+}
+
+
+/*默认水平布局，设置纵向加标签 */
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+
+/*对齐－顺向位置*/
+
+.flex-pack-center {
+  justify-content: center;
+}
+
+.flex-pack-start {
+  justify-content: flex-start;
+}
+
+.flex-pack-end {
+  justify-content: flex-end;
+}
+
+.flex-pack-justify {
+  justify-content: space-between;
+  /* android 4.4 */
+}
+
+.flex-pack-around {
+  justify-content: space-around;
+}
+
+
+/*对齐－垂向位置*/
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-align-baseline {
+  align-items: baseline;
+}
+
+.flex-align-stretch {
+  align-items: stretch;
+}
+
+
+/* 子元素自动占据剩余的空间 */
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-w {
+  width: 1px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+/*icon*/
+
+icon {
+  line-height: 1;
+  vertical-align: middle;
+}
+
+icon:before {
+  display: block;
+}
+
+.iconfont.icon-select-yes-full{font-size: 50rpx;color: #ff5b35;}
+.iconfont.icon-select-no{font-size: 50rpx;color: #dcdcdc;}
+.iconfont.icon-reduce-full,.iconfont.icon-add_full{font-size: 50rpx;color: #ff5b35}
+.iconfont.icon-reduce{font-size: 50rpx;color: #B1B1B1;}
+.iconfont.disabled{color: #dcdcdc}
+text.operateNum{vertical-align: middle;padding: 0 10rpx;}
+.iconfont.grey{color: #ccc;}
+
+/*modal*/
+
+.modal .mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+.modal .modal-center-content{
+  text-align: center;
+  z-index: 4;
+  width: 600rpx;
+  position: absolute;
+  left: 75rpx;
+  top:100rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+}
+
+.modal .modal-bottom-content{
+  width: 100%;
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  bottom:100rpx;
+  background-color: #fff;}
+
+  .red{
+    color: #ff5b35;
+  }
+  
+  .bold{
+    font-weight: bold;
+  }
+
+  .listtitle{
+    font-size: 28rpx;
+    padding: 20rpx;
+    color: #999;
+}
+
+
+/* 页面有背景时 */
+.pageBg{
+  background-color: #fafafa;
+}
+/* 底部或顶部有浮动层时*/
+.bottom-padding{
+  padding-bottom: 120rpx;
+} 
+.iphonex.bottom-padding{
+padding-bottom: 188rpx;
+}
+.top-padding{
+  padding-top: 100rpx;
+}
+/* 弹窗禁止底部页面滑动*/
+.wrap.overflow-H{
+  overflow: hidden;
+}
+.wrap.overflow-H.bottom-padding{
+  padding-bottom: 0;
+}
+.wrap.overflow-H.top-padding{
+  padding-top: 0;
+}
+/* 隐藏 */
+.hidden{
+  display: none;
+}
+
+/* 绝对定位-底部*/
+.abs-bottom{
+  position: fixed;bottom: 0;left: 0;width: 100%;
+  z-index: 2;
+}
+/* 绝对定位-头部*/
+.abs-top{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* 列表标题-不带背景*/
+.list-title{
+  font-weight:500;
+  padding: 30rpx 40rpx;
+  display: flex;justify-content: space-between;vertical-align: middle;
+}
+.list-title .left{
+  vertical-align: middle;
+}
+.list-title .right{
+  color: #999;font-weight: 300;vertical-align: middle;
+}
+
+/* 列表标题-带灰色背景*/
+.list-title.bg{
+  background-color: #fafafa;
+}
+/* 列表*/
+.list .list-item:last-child{
+  border: none;
+}
+.list .list-item{
+  height: 100rpx;line-height: 100rpx;padding: 0 40rpx;border-bottom: #fafafa 2rpx solid;background-color: #fff;
+  display: flex;justify-content: space-between;position: relative;
+}
+.list .list-item.hidden{
+  display: none;
+}
+.list .list-item .eighthouse-arrow-right{
+  position: absolute;top: 0;right: 15rpx;
+}
+.list .list-item picker{
+  display: block;width: 300rpx;text-align: right;
+}
+/* 中间列表*/
+.list-center {
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-top: 20rpx #fafafa solid;
+  border-bottom: 20rpx #fafafa solid;
+}
+/* 列表-左边字体偏重*/
+.list.leftBolder .right{
+  color: #999;
+}
+/* 列表-右边字体偏重*/
+.list.rightBolder .left{
+  color: #999;
+}
+.list .right input{
+  text-align: right;
+}
+.list input{
+  width: 100%;
+  height: 100%;
+}
+.list .icon{
+width: 40rpx;
+height: 40rpx;
+vertical-align: middle;margin-right: 5rpx;
+}
+.btn-main{
+  background-color: #FF3e23;
+  color: #fff;
+  font-size: 36rpx;
+  letter-spacing: 4rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

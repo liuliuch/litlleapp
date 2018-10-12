@@ -1,0 +1,7 @@
+<!--pages/zhougong/dreamsearch.wxml-->
+<view class='lists'>
+    <dreamitem list='{{dreamlist}}'></dreamitem>
+</view>
+<view class='alert' wx:if='{{dreamlist.length==0}}'>
+    <text class='text'>查询不到结果~请优化搜索词重新搜索</text>
+</view>

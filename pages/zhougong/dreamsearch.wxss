@@ -1,0 +1,10 @@
+/* pages/zhougong/dreamsearch.wxss */
+.alert{
+  width: 100%;
+  text-align: center;
+  padding-top: 70rpx
+  
+}
+.lists{
+  background: #F8F9F9
+}

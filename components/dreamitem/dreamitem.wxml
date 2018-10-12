@@ -1,0 +1,9 @@
+<view class='list'  wx:for='{{list}}' data-item="{{item}}" wx:key='{{index}}'>
+    
+    <view class='zhanwei'><view class='info'>
+      <view class='title'>{{item.type}} | {{item.title}}</view>
+    </view></view>
+    <view class='content'>
+    <rich-text nodes='{{item.content}}'></rich-text>
+    </view>
+</view>

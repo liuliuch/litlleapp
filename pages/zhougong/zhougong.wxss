@@ -1,0 +1,28 @@
+/* pages/goods/search.wxss */
+@import "../../images/iconfont/iconfont.wxss";
+.goods_search{
+    margin-top: 10rpx;
+    background-color: #fafafa;
+}
+
+.top{height: 56rpx;background-color: #fff;color: #fff;padding-bottom: 12rpx;padding-left: 20rpx;padding-right: 20rpx;}
+.top .top-middle{background-color: #f5f5f5;color:#999;border-radius: 32rpx;height: 56rpx;vertical-align: middle}
+.top .top-middle .icon-search{line-height: 56rpx;margin-left: 10rpx;vertical-align: middle}
+.top .top-middle text{vertical-align: middle;font-size: 24rpx;}
+.top input{height: 56rpx;line-height: 56rpx;vertical-align: middle;font-size: 24rpx;display: inline-block;width: 90%;}
+.top .right{line-height: 56rpx;font-size: 32rpx;padding-left: 10rpx;color: #666;}
+
+
+.searchcontent{
+    font-size: 30rpx;
+    padding: 20rpx;
+    background-color: #fff;
+}
+.searchcontent text{
+    padding: 0 15rpx;
+    line-height: 50rpx;
+    border: #f2f2f2 1rpx solid;
+    margin: 10rpx;
+    display: inline-block;
+    color: #666;
+}

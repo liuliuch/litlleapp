@@ -1,0 +1,4 @@
+<!--pages/goodslist/goodslist.wxml-->
+<view class='lists'>
+  <gooditem list='{{goodslistinfo}}'></gooditem>
+</view>

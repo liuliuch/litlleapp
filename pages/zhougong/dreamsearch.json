@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "周公解梦",
+  "navigationBarBackgroundColor": "#696969",
+  "backgroundColor": "black",
+  "usingComponents": {
+    "dreamitem": "/components/dreamitem/dreamitem"
+  }
+}

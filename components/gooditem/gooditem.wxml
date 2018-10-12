@@ -1,0 +1,14 @@
+<!--components/gooditem.wxml-->
+<view class='list' wx:for='{{list}}' wx:key='{{index}}' data-id='{{item.goods_id}}' catchtap='toGoodsDetail'>
+    <image class='goods_image' src='{{item.goods_pic}}'></image>
+    <view class='info'>
+      <view class='title'>{{item.goods_short_title}}</view>
+      <view class='type'>{{goodstype[item.goods_cat]}}</view>
+      <view class='others'>
+        <view>
+        <text>{{item.coupon_over}}人已购买 · 剩余{{item.coupon_number}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='price'>原价￥{{item.goods_price}} | 惠￥{{item.coupon_price}}</view>
+  </view>

@@ -1,0 +1,20 @@
+<!-- pages/zhougong/zhougong.wxml  -->
+
+<view class="goods_search">
+   <view class="top flex flex-wrap">  
+      <view class="top-middle  flex-1"><icon class="iconfont icon-search"></icon>
+      <input placeholder="请简单输入梦的内容" 
+        focus="true"
+        bindinput="getkeyword"  value="{{inputvalue}}"/>
+      </view>
+      <view bindtap="getdreamlist" class="right flex-align-right">
+        搜索
+      </view>
+  </view>
+  <view class="listtitle">热门搜索</view>
+  <view class="searchcontent">
+     <text 
+     data-item="{{item}}"
+     bindtap="onClickHot" wx:for="{{hot}}" wx:key="{{index}}">{{item}}</text>
+  </view>
+</view>
