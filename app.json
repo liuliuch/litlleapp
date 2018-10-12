@@ -17,6 +17,8 @@
     "navigationBarBackgroundColor": "#696969"
   },
   "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#8a8a8a",
     "list": [
       {
         "pagePath": "pages/webview/kuaidi",
