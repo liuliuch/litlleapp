@@ -7,9 +7,10 @@ Page({
   data: {
     info:[],
     fatedata:[],
+    luckyobject:[],
     index:5,
     array: [
-      '魔羯座 12月22-01月19日',
+      '摩羯座 12月22 - 01月19日',
       '水瓶座 01月20 - 02月18日',
       '双鱼座 02月19 - 03月20日',
       '白羊座 03月21 - 04月20日',
@@ -24,51 +25,63 @@ Page({
     ],
     objectArray: [{
         id: 0,
-        name: '魔羯座'
+        name: '摩羯座',
+        img:'/images/star/mojiezuo.jpg'
       },
       {
         id: 1,
-        name: '水瓶座'
+        name: '水瓶座',
+        img: '/images/star/shuipingzuo.jpg'
       },
       {
         id: 2,
-        name: '双鱼座'
+        name: '双鱼座',
+        img: '/images/star/shuangyuzuo.jpg'
       },
       {
         id: 3,
-        name: '白羊座'
+        name: '白羊座',
+        img: '/images/star/baiyangzuo.jpg'
       },
       {
         id: 4,
-        name: '金牛座'
+        name: '金牛座',
+        img: '/images/star/jinniuzuo.jpg'
       },
       {
         id: 5,
-        name: '双子座'
+        name: '双子座',
+        img: '/images/star/shuangzizuo.jpg'
       },
       {
         id: 6,
-        name: '巨蟹座'
+        name: '巨蟹座',
+        img: '/images/star/juxiezuo.jpg'
       },
       {
         id: 7,
-        name: '狮子座'
+        name: '狮子座',
+        img: '/images/star/shizizuo.jpg'
       },
       {
         id: 8,
-        name: '处女座'
+        name: '处女座',
+        img: '/images/star/chunvzuo.jpg'
       },
       {
         id: 9,
-        name: '天秤座'
+        name: '天秤座',
+        img: '/images/star/tianchengzuo.jpg'
       },
       {
         id: 10,
-        name: '天蝎座'
+        name: '天蝎座',
+        img: '/images/star/tianxiezuo.jpg'
       },
       {
         id: 11,
-        name: '射手座'
+        name: '射手座',
+        img: '/images/star/sheshouzuo.jpg'
       }
     ],
   },
@@ -84,9 +97,15 @@ Page({
         wx.showToast({
           title: ''+res.data.reason,
         })
+        let fatedata = res.data.data.fate_data
+        fatedata.forEach((item) => {
+          item.value = parseInt(item.value.substr(0, 1))
+        })
         that.setData({
           info: res.data.data,
-          fatedata:res.data.data.fate_data
+          fatedata: fatedata,
+          luckyobject: res.data.data.lucky_object
+
         })
         //let info=res.data.data
         console.log(that.data.info)
@@ -152,10 +171,10 @@ Page({
 
   // },
 
-  // /**
-  //  * 用户点击右上角分享
-  //  */
-  // onShareAppMessage: function() {
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function() {
 
-  // }
+  }
 })
